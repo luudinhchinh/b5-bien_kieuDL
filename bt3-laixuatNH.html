@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var tienVay, laiXuat, thangVay;
+        tienVay = prompt('nhập tiền vay:');
+        laiXuat = prompt('lãi xuất là:');
+        thangVay = prompt('tháng vay là:');
+        // chuyển sang kiểu số
+        var tienVayN = parseInt(tienVay);
+        var laiXuatN = parseFloat(laiXuat);
+        var thangVayN = parseInt(thangVay);
+        // công thức
+        var laiDon = tienVayN*laiXuatN*thangVayN/12;
+        var laiKep = (tienVayN + laiDon);
+        // hiển thị
+        document.write('số tiền vay:'+tienVay);
+        document.write('<br/>')
+        document.write('lãi xuất:'+laiXuat);
+        document.write('<br/>')
+        document.write('tháng vay:'+thangVay);
+        document.write('<br/>')
+        document.write('tiền lãi là:'+laiDon);
+        document.write('<br/>')
+        document.write('tiền lãi là:'+laiKep);
+        
+        
+    </script>
+</body>
+</html>
