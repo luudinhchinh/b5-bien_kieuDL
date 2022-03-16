@@ -11,20 +11,21 @@
         var tienVay, laiXuat, thangVay;
         tienVay = prompt('nhập tiền vay:');
         laiXuat = prompt('lãi xuất là:');
-        thangVay = prompt('tháng vay là:');
+        namVay = prompt('nam vay là:');
         // chuyển sang kiểu số
         var tienVayN = parseInt(tienVay);
         var laiXuatN = parseFloat(laiXuat);
-        var thangVayN = parseInt(thangVay);
+        var namVayN = parseInt(namVay);
         // công thức
-        var laiDon = tienVayN*laiXuatN*thangVayN/12;
-        var laiKep = (tienVayN + laiDon);
+        var laiDon = tienVayN*laiXuatN;
+        var laiKep = (tienVayN + laiDon*namVayN);
+
         // hiển thị
         document.write('số tiền vay:'+tienVay);
         document.write('<br/>')
         document.write('lãi xuất:'+laiXuat);
         document.write('<br/>')
-        document.write('tháng vay:'+thangVay);
+        document.write('tháng vay:'+namVay);
         document.write('<br/>')
         document.write('tiền lãi là:'+laiDon);
         document.write('<br/>')

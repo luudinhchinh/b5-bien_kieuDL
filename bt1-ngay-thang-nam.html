@@ -8,10 +8,11 @@
 </head>
 <body>
     <script>
-        let day = prompt('nhập ngày:');
-        let month = prompt('nhập tháng:');
-        let year = prompt('nhập năm:');
-        document.write('ngày hiện tại là:'+''+day+'/'+month+'/'+year);
+        let day = parseInt(prompt('nhập ngày:'));
+        let month = parseInt(prompt('nhập tháng:'));
+        let year = parseInt(prompt('nhập năm:'));
+        document.write('ngày hiện tại là:' + (day<10? '0'+day: day)+'-' + (month<10?'0'+day:day)+'-'+year);
+       
     </script>
 </body>
 </html>
